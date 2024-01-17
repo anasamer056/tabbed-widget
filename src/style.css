@@ -33,6 +33,9 @@
     --border-radius: 8px;
     --white: #fffbfb;
     --grey: #f0eef1;
+    --light-grey: #f6f6f6;
+    --dark-grey: #c7c7c7;
+    --hover-grey: #dddddd;
 }
 
 *{
@@ -45,7 +48,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
 }
+.content{
+    height: 400px;
+}
+
 .margin-20 {
     margin: 20px 0;
 }
@@ -63,22 +71,48 @@ body{
     font-weight: bold;
 }
 
-.tab-widget {
-    width: var(--max-width-widget);
-    background-color: white;
-    border-radius: var(--border-radius);
-    box-shadow: var(--drop-shadow);
-}
-
 .icons {
     height: 100px;
+    background-color: var(--light-grey);
+    margin-top: 10px;
 }
 .icon-btn {
     width: 100px;
     height: 100%;
     font-weight: 400;
     display: block;
+    background-color: var(--light-grey);
+    border: 0;
+    box-shadow: -1px 0px 0px 0px var(--dark-grey), 
+    1px 0px 0px 0px var(--dark-grey),
+    0px 1px 0px 0px var(--dark-grey),
+    0px -1px 0px 0px var(--dark-grey);
+
     > svg {
         width: 40%;
     }
+}
+.icon-btn:first-child{
+    box-shadow:
+    1px 0px 0px 0px var(--dark-grey),
+    0px 1px 0px 0px var(--dark-grey),
+    0px -1px 0px 0px var(--dark-grey);
+}
+.icon-btn:last-child{
+    box-shadow: -1px 0px 0px 0px var(--dark-grey),
+    0px 1px 0px 0px var(--dark-grey),
+    0px -1px 0px 0px var(--dark-grey);
+}
+
+.icon-btn:hover {
+    background-color: var(--hover-grey);
+}
+.tab-widget {
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: var(--white);
+    display: inline;
+    margin: 0 auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--drop-shadow);
 }
