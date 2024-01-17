@@ -7,11 +7,24 @@
 } 
 @font-face {
     font-family: 'Poppins';
+    font-weight: 400;
+    font-style: normal;
+    src: url('./fonts/Poppins-Regular.woff2') format("woff2"),
+    url('./fonts/Poppins-Regular.woff') format('woff') 
+} 
+@font-face {
+    font-family: 'Poppins';
     font-weight: 700;
     font-style: normal;
     src: url(./fonts/Poppins-Bold.woff2) format('woff2'),
     url(./fonts/Poppins-Bold.woff) format('woff');
-    
+}
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-style: normal;
+    src: url('./fonts/Poppins-Light.woff2') format('woff2'),
+    url('./fonts/Poppins-Light.woff') format('woff');
 }
 
 :root {
@@ -54,4 +67,18 @@ body{
     width: var(--max-width-widget);
     background-color: white;
     border-radius: var(--border-radius);
+    box-shadow: var(--drop-shadow);
+}
+
+.icons {
+    height: 100px;
+}
+.icon-btn {
+    width: 100px;
+    height: 100%;
+    font-weight: 400;
+    display: block;
+    > svg {
+        width: 40%;
+    }
 }
