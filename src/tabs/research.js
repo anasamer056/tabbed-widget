@@ -1,4 +1,5 @@
 import Tab from './main-class.js';
+import contentImg from '../images/desk.jpg';
 
 
 const svg = `<svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
@@ -15,5 +16,9 @@ viewBox="0 0 496 496" xml:space="preserve"><g><g><g><path d="M464,280h-80v-16h-1
 <rect x="272" y="64" width="16" height="16"/>
 <rect x="240" y="64" width="16" height="16"/></g></g></g></svg>`;
 const title = 'Research';
+const contentTitle = 'Research & Analytics';
+const content = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus itaque nesciunt, magni quo dolor culpa doloribus. Quaerat iusto nostrum ipsa ratione ut delectus eligendi saepe cum accusantium, inventore adipisci porro.'
 
-export default new Tab(title, svg);
+const tab = new Tab(title, svg, contentImg, contentTitle, content);
+tab.renderContent();
+export default tab;

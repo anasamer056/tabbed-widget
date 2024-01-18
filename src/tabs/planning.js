@@ -1,4 +1,6 @@
 import Tab from "./main-class";
+import contentImg from '../images/plan.jpg';
+
 
 const svg = `<svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 viewBox="0 0 295.5 295.5" xml:space="preserve">
@@ -37,4 +39,7 @@ viewBox="0 0 295.5 295.5" xml:space="preserve">
 
 const title = "Planning";
 
-export default new Tab(title, svg);
+const contentTitle = 'Planning & Strategy';
+const content = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus itaque nesciunt, magni quo dolor culpa doloribus. Quaerat iusto nostrum ipsa ratione ut delectus eligendi saepe cum accusantium, inventore adipisci porro.'
+
+export default new Tab(title, svg, contentImg, contentTitle, content);
