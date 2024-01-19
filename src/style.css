@@ -145,3 +145,16 @@ body{
         font-size: inherit;
     }
 }
+.active,
+.active:first-child,
+.active:last-child {
+    background-color: var(--white);
+    box-shadow: -1px 0px 0px 0px var(--dark-grey), 
+    1px 0px 0px 0px var(--dark-grey),
+    0px 1px 0px 0px transparent,
+    0px -1px 0px 0px var(--dark-grey)
+}
+
+.active:hover{
+    background-color: transparent;
+}
